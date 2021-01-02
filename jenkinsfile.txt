@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-	tools {
+	//tools {
 //		maven 'Maven3.6'
 //		jdk 'JDK1/8'
                //  ms 'MSTest'
-	}
+	//}
 //
 //	environment {
 //		M2_INSTALL = "/home/gamut/Distros/apache-maven-3.6.0/bin/mvn"
