@@ -32,12 +32,13 @@ pipeline {
 			}
 	    }
                 stage('Unit test')
-		 {
-  			def MSTest = tool 'MSTest14.0'
+		 { 	steps {	
+		       def MSTest = tool 'MSTest14.0'
   			dir('Test.Project.Tests/bin/Debug/Test.Project.Tests.dll')
   				{
    					 bat "${MSTest} /testcontainer:Test.Project.Tests.dll /resultsfile:Results.trx"
   				}
+				}
 		  }
 
 
